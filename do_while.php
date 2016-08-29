@@ -1,6 +1,6 @@
 <?php 
-	$evens = 100;
+	$multiples = 2;
 	do {
-		echo "$evens" . PHP_EOL;
-		$evens -= 5;
-	} while ($evens >= -10);
+		echo "$multiples" . PHP_EOL;
+		$multiples *= $multiples;
+	} while ($multiples < 1000000);
