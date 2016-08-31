@@ -38,8 +38,9 @@
 	foreach($things as $thingsValue) {
 		if(is_array($thingsValue)) {
 			foreach($thingsValue as $arrayValue) {
-				echo "Array: $arrayValue\n";
+				echo $arrayValue;
 			}
+		echo PHP_EOL;
 		} else {
 			echo $thingsValue . PHP_EOL;
 		}
