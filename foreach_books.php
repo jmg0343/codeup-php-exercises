@@ -61,8 +61,19 @@
 		}
 	}
 
-	
+	echo PHP_EOL . PHP_EOL;
 
+// Update your loop to only show books that were written after 1950.
 
+	foreach ($books as $title => $value) {
+		// print_r($value["published"]);
+		// echo PHP_EOL;
+		if ($value["published"] > 1950) {
+			echo "Title: " . $title . PHP_EOL;
+			foreach ($value as $info => $infoValue) {	
+					echo "$info: " . $infoValue . PHP_EOL;
+			}
+		}
+	}
 
 
