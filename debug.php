@@ -68,7 +68,7 @@ foreach ($orders as $index => $order) {
     echo "Crust: {$order['crust']}" . PHP_EOL;
 
     // if the order has special instructions display them
-    if ($order['special instructions']) {
+    if (isset($order['special instructions'])) {
         echo "Special Prep: {$order['special instructions']}" . PHP_EOL;
     }
     
