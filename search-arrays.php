@@ -7,6 +7,14 @@ $compare = ['Tina', 'Dean', 'Mel', 'Amy', 'Michael', 'Joey'];
 
 
 // Create a function that returns TRUE or FALSE if an array value is found. Search for Tina and Bob in $names. Make sure it works as expected.
+
+// function arrayContains ($haystack, $needle) {
+// 	$result = array_search($needle, $haystack);
+// 	return $result !== false;
+// }
+
+// arrayContains('Tina', $names);
+
 function searchInArray($search, $array) {
 	$result = array_search($search, $array);
 	if ($result !== false) {
@@ -24,9 +32,7 @@ echo PHP_EOL . PHP_EOL;
 
 // function compareArrays($array1, $array2) {
 // 	foreach ($array1 as $names1) {
-// 		// print_r($names1 . PHP_EOL);
 // 		foreach ($array2 as $names2) {
-// 		// print_r($names2 . PHP_EOL);
 // 			if ($names1 === $names2) {
 // 			print_r($names2 . PHP_EOL);
 // 			}
@@ -45,3 +51,17 @@ function compareArrays($array1, $array2) {
 }
 
 compareArrays($names, $compare);
+
+// function compareArrays($arrayOne, $arrayTwo) {
+// 	$count = 0;
+
+// 	foreach ($arrayOne as $value) {
+// 		if (arrayContains($arrayTwo, $value)) {
+// 			$count ++;
+// 		}
+// 	}
+
+// 	return $count;
+// }
+
+// compareArrays($names, $compare);
