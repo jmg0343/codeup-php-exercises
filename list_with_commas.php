@@ -22,12 +22,12 @@ function humanizedList($string, $sort = false) {
 	$string = implode(",", $array);
 
 //	prints out new string
-	return $string . PHP_EOL;
+	return $string;
 }
 
 // echo humanizedList($physicistsString, true);
 $famousFakePhysicists = humanizedList($physicistsString, true);
 
-echo "Some of the most famous fictional theoretical physicists are {$famousFakePhysicists}" . PHP_EOL;
+echo "Some of the most famous fictional theoretical physicists are {$famousFakePhysicists}." . PHP_EOL;
 
  ?>
